@@ -32,7 +32,7 @@ function fnSwitch(type) {
                     $("#userGivenName").text(bintoname.userBinCode);
                     var asciiname = bintoname._fnConvertoAscii(bintoname.userBinCode) || '';
                     $("#asciiname").text(asciiname['name']);
-                    $("#userNameForm").hide();
+                   $(".n2bb2nForm").hide();
                     $("#userData").show();
                     var objData = {
                         name: bintoname.userBinCode,
@@ -104,8 +104,9 @@ function fnSwitch(type) {
 var nametobin = {
     username: '',
     init: function() {
-        $("#userNameForm").show();
-        $("#userData").hide();
+		      
+        $("#n2b").show();
+        $("#userData, #b2n").hide();
         $('#username').val('');
         $("#userGivenName, #asciiname").text('');
         nametobin.recentlyConverted();
@@ -117,7 +118,7 @@ var nametobin = {
                 $("#userGivenName").text(nametobin.username);
                 var asciiname = nametobin._fnConvertoAscii(nametobin.username) || '';
                 $("#asciiname").text(asciiname);
-                $("#userNameForm").hide();
+                $(".n2bb2nForm").hide();
                 $("#userData").show();
                 var objData = {
                     name: nametobin.username,
@@ -207,5 +208,4 @@ $('.input').keypress(function(e){
     /*document.getElementById('binaryData').addEventListener('input', function (e) {
       e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
     });*/
-
 
