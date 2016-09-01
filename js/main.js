@@ -196,7 +196,7 @@ var nametobin = {
     }
 };
 nametobin.recentlyConverted();
-<<<<<<< HEAD
+
 $('.input').keypress(function(e){
 	var type = $("#ddST").attr('data-val');
 	if(e.which == 13){
@@ -207,5 +207,5 @@ $('.input').keypress(function(e){
     /*document.getElementById('binaryData').addEventListener('input', function (e) {
       e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
     });*/
-=======
->>>>>>> c6d3442ce181727055080ce348c1ed7f690b6871
+
+
