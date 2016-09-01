@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text to Binary Conversion</title>
+    <!--Import Google Icon Font-->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/custom.css" media="screen,projection" />
+	<meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./fonts/737577.png">
+</head>
+
+<body>
+    <header>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="javascript:;" onClick="fnSwitch('b2n');">Binary to Text</a></li>
+            <li><a href="javascript:;" onClick="fnSwitch('n2b');">Text to Binary</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper">
+				<div class="left hide-on-med-and-down"><a href="javascript:;" onClick="fnSwitch('n2b');"><i class="material-icons right">home</i></a></div>
+                <a href="#" class="brand-logo center" id="logo">Text to Binary Conversion</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button" href="javascript:;" data-val="n2b" data-activates="dropdown1" id="ddST">Text to Binary<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="row n2bb2nForm" id="n2b">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <div class="card-panel">
+                                <input type="text" length="50" class="input" maxlength="50" value="" id="username" required>
+                                <label for="input_text">Input text</label>
+                                <button class="btn waves-effect waves-light" name="submit" onClick="nametobin.fnGetBin()">Submit
+									<i class="material-icons right">send</i>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row n2bb2nForm" id="b2n" style="display:none;">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <div class="card-panel">
+                                <textarea id="binaryData" type="number" class="materialize-textarea input" length="200" maxlength="200" required></textarea>
+                                <label for="textarea1">Textarea</label>
+                                <button class="btn waves-effect waves-light" name="submit" onClick="bintoname.fnGetText()">Submit
+									<i class="material-icons right">send</i>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="userData" style="display:none;">
+                <div class="col s12 m12">
+                    <div class="card blue-grey darken-1 card-panel hoverable">
+                        <div class="card-content white-text">
+                            <span class="card-title" id="userGivenName"></span>
+                            <p id="asciiname"></p>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn waves-effect waves-light" name="reset" onClick="fnSwitchReset()" id="resetName">Try another name
+								<i class="material-icons right">autorenew</i>
+							</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+            <div class="row" id="clearData" style="display:none;">
+=======
+            <div class="row" id="clearData"  style="display:none;">
+>>>>>>> c6d3442ce181727055080ce348c1ed7f690b6871
+                <a class="btn-floating btn-large red right" onClick="nametobin.sessionClear()"><i class="material-icons">delete</i></a>
+            </div>
+            <div class="row" id="recentlyConverted" style="display:none;">
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="page-footer stickbottom" style="position:fixed;width:100%;">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <span class="left-align white-text text-darken-2">&#169; Developed by - <a class="black-text text-darken-4" href="https://github.com/kartheekgj">kartheekgj</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script>
+    
+</script>
+
+</html>
